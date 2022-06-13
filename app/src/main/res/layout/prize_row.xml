@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/prize_points_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="100 Points"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/prize_iv"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/prize_points_value_tv"
+        app:layout_constraintTop_toBottomOf="@+id/prize_points_value_tv"
+        app:srcCompat="@drawable/we_cannes_logo_lockuo" />
+
+    <TextView
+        android:id="@+id/prize_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Donate To Ukraine!!"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/prize_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prize_subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Awesome Ukraine Prizes are here"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/prize_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/prize_title_tv" />
+
+    <TextView
+        android:id="@+id/prize_desc_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:text="Donate your tokens to help with the aid efforts in Ukraine"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/prize_subtitle_tv"
+        app:layout_constraintTop_toBottomOf="@+id/prize_subtitle_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

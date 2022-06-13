@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "573983127263",
+    "project_id": "wecannes-49b04",
+    "storage_bucket": "wecannes-49b04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573983127263:android:5f8f35d2ed003912f45b6a",
+        "android_client_info": {
+          "package_name": "com.gimbal.kotlin.ouicannes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573983127263-bbu3pafiv7vb5v0lddjbe3i503a5en65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcA-swAtIUZ4myLgIMVP--5JYFJK8AOrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573983127263-bbu3pafiv7vb5v0lddjbe3i503a5en65.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "573983127263-jdnpro1kr1pbvbi9qlptnqlokhr4opus.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gimbal.wecannes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

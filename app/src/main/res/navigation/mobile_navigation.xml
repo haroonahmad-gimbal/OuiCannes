@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.gimbal.kotlin.ouicannes.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_earnPointsFragment"
+            app:destination="@id/earnPointsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_redeemPointsFragment"
+            app:destination="@id/redeemPointsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_upcomingEventsFragment"
+            app:destination="@id/upcomingEventsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_partnersFragment"
+            app:destination="@id/partnersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.gimbal.kotlin.ouicannes.ui.map.MapFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.gimbal.kotlin.ouicannes.ui.wallet.WalletFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/earnPointsFragment"
+        android:name="com.gimbal.kotlin.ouicannes.ui.earnpoints.EarnPointsFragment"
+        android:label="EarnPointsFragment" />
+    <fragment
+        android:id="@+id/redeemPointsFragment"
+        android:name="com.gimbal.kotlin.ouicannes.ui.redeempoints.RedeemPointsFragment"
+        android:label="fragment_redeem_points"
+        tools:layout="@layout/fragment_redeem_points" />
+    <fragment
+        android:id="@+id/upcomingEventsFragment"
+        android:name="com.gimbal.kotlin.ouicannes.ui.upcomingevents.UpcomingEventsFragment"
+        android:label="fragment_upcoming_events"
+        tools:layout="@layout/fragment_upcoming_events" />
+    <fragment
+        android:id="@+id/partnersFragment"
+        android:name="com.gimbal.kotlin.ouicannes.ui.partners.PartnersFragment"
+        android:label="PartnersFragment" />
+</navigation>
